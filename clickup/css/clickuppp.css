@@ -1,0 +1,719 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    margin:100px 50px 0px 0px;
+  }
+
+  .nav-links a:hover{
+    color:rgb(0, 153, 255);
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .dropdown:hover .mega-menu {
+    display: block;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .signup {
+    padding: 10px;
+    background-color: rgb(0, 162, 255);
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .login{
+    padding: 10px;
+    background-color: gray;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+
+  }
+
+
+  
+  /* Media query for responsive design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      margin: 0;
+    }
+  
+    .mega-menu {
+      position: static;
+      display: block;
+      background-color: #333;
+      padding: 10px;
+      margin-top: 5px;
+    }
+  
+    .cta-buttons {
+      margin-top: 10px;
+    }
+  }
+
+  .main-content {
+    text-align: center;
+    padding: 150px;
+  }
+ 
+  h1 {
+    font-size: 70px; 
+    margin-bottom: 30px;
+   color: purple;
+   font-weight: 900;
+   line-height:86px;
+   max-inline-size:700px;
+   text-align:center;
+   padding:0px 250px;
+   margin:0px 0px 0px 0px;
+ } 
+ 
+  
+h2 {
+    color: white;
+    font-size: 15px; 
+    margin-bottom: 15px;
+    background: black;
+    display:inline-block;
+    margin:250px 100px 0px 0px;
+    border-radius: 30px;
+  }
+  
+.description{
+    color: black;
+    font-size: 25px; 
+     line-height:1.5;
+     font-weight: 800;
+}
+
+.main-content{
+    text-align: center;
+    padding:0px 100px;
+
+}
+
+h3 {
+    color: white;
+    font-size: 20px; 
+    margin-bottom: 10px;
+    display:inline-block;
+    background: rgb(0, 123, 255);
+
+}
+
+/* Add your CSS styles here */
+
+.cta-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup:hover {
+    background-color: #2980b9;
+}
+
+.more{
+  text-align: center;
+  padding:0px 100px;
+  color:rgba(0, 0, 0, 0.825);
+  font-size: 25px; 
+   line-height:1.5;
+   font-weight: 800;
+
+}
+
+.p{
+  color:#333
+}
+
+
+
+.descriptions{
+  color: rgba(0, 0, 0, 0.747);
+    font-size: 20px; 
+     line-height:1.5;
+     font-weight: 800;
+
+}
+
+/* ... (your existing CSS) ... */
+
+.get-started-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.get-started-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #00aaff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background: linear-gradient(263deg,#fa12e3 -35.15%,#7612fa 40.89%,#12d0fa 134.61%);
+}
+
+/* Add any additional styles as needed */
+
+
+
+
+/* ... (your existing CSS) ... */
+
+.features-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.features-list li {
+  position: relative;
+  text-align: center;
+}
+
+.features-list img {
+  width: 2000px; /* Adjust the size as needed */
+  height: 500px; /* Adjust the size as needed */
+}
+
+.features-list a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-top: 5px;
+}
+
+.feature-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1;
+}
+
+.features-list li:hover .feature-dropdown {
+  display: block;
+}
+
+/* Add any additional styles as needed */
+
+
+/* Improved Collaboration Styles */
+.improved-collaboration-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0; /* Adjust margin as needed */
+}
+
+.left-content {
+  width: 50%;
+}
+
+.left-content h1 {
+  font-size: 60px;
+  color: rgb(9, 0, 128);
+  margin-bottom: 20px;
+  margin:100px 800px 0px 0px;
+  padding-left: 60px;
+ 
+}
+
+.left-content .descriptions {
+  font-size: 15px;
+  color:black;
+  padding-left: 50px;
+}
+
+.left-content .descriptions p {
+  margin-top: 20px;
+}
+
+.right-content {
+  width: 45%;
+}
+
+.right-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border-radius for a rounded corner effect */
+}
+
+.left-contents{
+  color:rgb(0, 34, 255);
+  padding-right:800px;
+  margin:100px 2000px 0px 0px;
+  font-size: 100px;
+
+}
+
+.imgenhance{
+  color:rgba(127,118,179,.6);
+  font-weight: 800;
+  font-weight:800;
+  font-size: 60px;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 0px 1000px 1000px 0px;
+
+}
+
+.over {
+  color: black;
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 800;
+  text-align: center;
+  margin: 0px 0px 100px 0px;
+  padding: 0px 100px;
+}
+
+
+.centermain{
+  text-align: center;
+  color: black;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+
+.iconn {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Optional: To remove the right margin from the last icon */
+.iconn:last-child {
+  margin-right: 0;
+}
+
+.iconn{
+  width:32;
+  height:32;
+  fill:none;
+  padding: 0px 0px 0px 60px;
+}
+
+.circle{
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: rgb(68, 0, 255);
+  font-weight: 900;
+  line-height: 86px;
+  max-inline-size: 700px;
+  text-align: center;
+  padding: 0px 400px;
+  margin: 0px 0px 0px 0px;
+ 
+}
+
+
+.undercircle{
+  display: flex;
+    justify-content: center;
+    inline-size: 341px;
+    block-size: 63px;
+    -webkit-margin-after: 12px;
+    margin-block-end: 12px;
+    border-radius: 12px;
+    background: linear-gradient(263deg,#fa12e3 -35.15%,#7612fa 40.89%,#12d0fa 134.61%);
+    box-shadow: 0 4px 4px 0 rgba(87,75,172,.15);
+    font-size: 40px;
+    margin: 0px 0px 0px 580px;
+}
+
+
+.p1{
+  text-align: center;
+  margin-right: 40px;
+  color:#7f76b3;
+}
+
+.undcirnav{
+  font-size: 50px;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 800;
+    line-height: 85px;
+    max-inline-size: 800px;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 0px 330px;
+
+}
+
+.p2{
+  text-align: center;
+  font-size: 25px;
+}
+
+.p22{
+  text-align:center;
+  font-size:20px;
+}
+
+
+
+  .boxes-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+
+  
+  .main-box {
+    border: 2px solid #333;
+    padding:20px;
+    box-sizing: border-box;
+    margin:  100px 200px 100px 200px;
+    height: 390px;
+  }
+
+  .inner-div {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0px 0px 150px 0px;
+  }
+  
+
+  .sub-box {
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+    margin:0px 0px 0px 800px;
+    
+  }
+
+  .imgaun{
+    height:10px;
+    width: 10px;
+  }
+
+    
+  .star {
+      color: gold;
+    }
+    
+    /* Additional styles for the image if needed */
+
+  
+    
+.rating{
+    height:10px;
+    width: 10px;
+  }
+
+
+.bd-example {
+  padding: 10px;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgb(240, 236, 236);
+  border-radius: 10px;
+  }
+
+
+.card {
+  
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  margin: 0px 90px 50px 190px;
+}
+
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.main-box {
+  display: flex;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+/* Style for the aunty image */
+.aunty img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional style for positioning */
+.main-content {
+  flex-grow: 1;
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+
+.inner-div img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px; /* Adjust the top margin as needed */
+}
+
+.imgaunty{
+  margin:right;
+  margin:0px 0px 0px 0px;
+}
+.use-this-solution{
+  position: relative;
+    display: flex;
+    grid-gap: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    inline-size: 100%;
+    block-size: 63px;
+    border-radius: 12px;
+    background: linear-gradient(89deg,#45c4f9 -25.12%,#7d09ff 46.26%,#ff0be5 116.7%);
+    color: rgb(var(--color-white));
+    box-shadow: 0 4px 4px 0 rgba(87,75,172,.15);
+    font-weight: 700;
+    text-decoration: none!important;
+    transition: var(--button-transition,var(--transition-short));
+    transform: translateY(0);
+    block-size: 52px;
+
+}
+
+
+.background-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-padding-before: 32%;
+    padding-block-start: 32%;
+    -webkit-padding-after: 24%;
+    padding-block-end: 24%;
+    background-image: url(BG.jpg);
+    background-position: 50%;
+    background-size: 105% auto;
+    background-repeat: no-repeat;
+    
+}
+
+
+.centered-text {
+  font-size: 50px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 800;
+    line-height: 85px;
+    max-inline-size: 800px;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 0px 350px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  inline-size: 341px;
+  block-size: 63px;
+  -webkit-margin-after: 12px;
+  margin-block-end: 12px;
+  border-radius: 12px;
+  background: linear-gradient(263deg,#fa12e3 -35.15%,#7612fa 40.89%,#12d0fa 134.61%);
+  box-shadow: 0 4px 4px 0 rgba(87,75,172,.15);
+  font-size: 40px;
+  margin: 0px 0px 0px 580px;
+}
+
+.bgbody{
+  text-align: center;
+  padding: 0px 100px;
+  color: rgba(0, 0, 0, 0.825);
+  color: purple;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 74px;
+
+}
+
+.bgsbody{
+  text-align: center;
+    padding: 0px 100px;
+    color: rgba(0, 0, 0, 0.825);
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 800;
+
+}
+
+.bgsbody p{
+  text-align: center;
+  padding: 0px 100px;
+  color:black;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 800;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ /* You can adjust the height as needed */
+}
+
+.image-container img {
+  width: 822; /* Ensure images don't exceed their natural size */
+  height:1106;
+}
+
+.card-body{
+  background-color:blue;
+}
+
+.middiv{
+  text-align: center;
+}
+
+.horizantalimg{
+  margin:0px 0px 0px 0px;
+}
+
+.bgbodys{
+  max-inline-size: 600px;
+    margin: auto;
+    -webkit-margin-after: 18px;
+    margin-block-end: 18px;
+    background-color: #24223e;
+    background-image: url(/assets/home-test/text-bg/everything-your-team-is-looking-for-desktop.svg);
+    background-position: -79px -53px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    color: #24223e;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 74px;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.bgsbodys{
+  text-align: center;
+    padding: 0px 100px;
+    color: rgba(0, 0, 0, 0.825);
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 800;
+
+}
